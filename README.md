@@ -81,6 +81,8 @@ To run the application, follow these steps:
    MONGODB_URI = "your mongodb URI"
    CLOUDINARY_API_KEY = "your cloudinary API key"
    CLOUDINARY_SECRET_KEY = "your cloudinary secret key"
+   VONAGE_API_KEY = "your vonage API key"
+   VONAGE_API_SECRET = "your vonage secret key"
    ```
 5. After it finishes, run the command:
    ```bash
