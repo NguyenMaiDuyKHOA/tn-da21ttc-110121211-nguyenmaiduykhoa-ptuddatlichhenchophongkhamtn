@@ -1,0 +1,39 @@
+services:
+  admin:
+    build: ./admin
+    container_name: bookingmedical-admin
+    restart: always
+    ports:
+      - "5176:80"
+    depends_on:
+      - backend
+
+  frontend:
+    build: ./frontend
+    container_name: bookingmedical-frontend
+    restart: always
+    ports:
+      - "5175:80"
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    container_name: bookingmedical-backend
+    restart: always
+    ports:
+      - "4000:4000"
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:7
+    container_name: bookingmedical-mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Euclid Circular A", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.react-calendar__tile.bg-blue-200,
+.react-calendar__tile.bg-blue-200:enabled:hover,
+.react-calendar__tile.bg-blue-200:enabled:focus {
+  background: #bfdbfe !important; /* Tailwind bg-blue-200 */
+  color: #1e3a8a !important;      /* Tailwind text-blue-900 */
+}
+
+select, input, textarea {
+    border: 1px solid #000111;
+    outline-color: #000111;
+    border-radius: 4px;
+}
+
+.active {
+    background-color: #FFB554;
+    border-color: #FFB554;
+}
