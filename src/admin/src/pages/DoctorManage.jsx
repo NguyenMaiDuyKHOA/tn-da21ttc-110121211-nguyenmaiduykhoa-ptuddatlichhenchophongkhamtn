@@ -258,7 +258,7 @@ const DoctorManage = ({ token }) => {
                         <p className='mb-2'>Upload Image</p>
                         <div className='flex gap-2'>
                             <label htmlFor="image">
-                                <img src={!image ? assets.upload_area : URL.createObjectURL(image)} alt="" className='w-40 h-40 sm:w-52 sm:h-52 lg:w-64 lg:h-64 object-cover border border-gray-300 rounded cursor-pointer' />
+                                <img src={!image ? assets.upload_area : URL.createObjectURL(image)} alt="" className='w-40 h-60 sm:w-52 sm:h-52 lg:w-64 lg:h-64 object-cover border object-top border-gray-300 rounded cursor-pointer' />
                                 <input onChange={(e) => setImage(e.target.files[0])} type="file" id="image" hidden required />
                             </label>
                         </div>
@@ -327,7 +327,7 @@ const DoctorManage = ({ token }) => {
                                             <hr className="mb-2" />
                                             <div className="grid grid-cols-[1fr_3fr_5fr] gap-2 px-2">
                                                 <div className="gap-2 group relative w-20 h-20">
-                                                    <img src={item.image} alt='' className="w-20 h-20 object-cover" />
+                                                    <img src={item.image} alt='' className="w-20 h-20 object-cover object-top" />
 
                                                     <div className="group-hover:block hidden absolute z-50 w-96 bg-white border border-gray-300 p-2">
                                                         <img src={item.image} alt='' className='w-96' />

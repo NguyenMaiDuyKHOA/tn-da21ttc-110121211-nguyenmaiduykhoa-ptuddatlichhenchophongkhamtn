@@ -126,7 +126,7 @@ const Booking = () => {
                         doctorId === ''
                             ? <img src={assets.logo} alt="" className='w-40 h-40 sm:w-52 sm:h-52 lg:w-64 lg:h-64 object-cover border border-gray-300 rounded' />
                             : <div className='flex gap-3 flex-col lg:flex-row'>
-                                <img src={selectedDoctor.image} alt="" className='w-40 h-40 sm:w-52 sm:h-52 lg:w-64 lg:h-64 object-cover border border-gray-300 rounded' />
+                                <img src={selectedDoctor.image} alt="" className='w-40 h-40 sm:w-52 sm:h-52 lg:w-64 lg:h-64 object-cover object-top border border-gray-300 rounded' />
                                 <div className='ml-3'>
                                     <p className='font-bold text-lg mb-5'>Bs. {selectedDoctor.name}</p>
                                     <p className='font-bold text-base'>Giới thiệu về bác sĩ: </p>

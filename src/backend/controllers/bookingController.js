@@ -32,7 +32,6 @@ const addBooking = async (req, res) => {
         const booking = new bookingModel(bookingInfo);
         await booking.save()
 
-        console.log(booking)
         res.json({ success: true, message: "Đặt hẹn thành công", booking })
     } catch (error) {
         res.json({ success: false, message: error.message })
@@ -92,7 +91,6 @@ const cartData = async (req, res) => {
         console.log(req.body)
 
         const booking = await bookingModel.find({ userId }).populate('doc')
-        console.log(booking)
         res.json({ success: true, booking })
     } catch (error) {
         console.log(error)

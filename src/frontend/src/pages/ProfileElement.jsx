@@ -30,7 +30,7 @@ const ProfileElement = () => {
     return (
         <div className='grid grid-cols-[1fr_2fr]'>
             <div className='flex justify-center'>
-                <img src={info.image ? info.image : assets.user} alt="" className='w-44 h-56 mt-5 border border-gray-500 rounded object-cover' />
+                <img src={info.image ? info.image : assets.user} alt="" className='w-44 h-56 mt-5 border border-gray-500 rounded object-cover object-top' />
             </div>
             <div className='flex flex-col gap-3'>
                 <p className='flex justify-center font-bold text-lg'>THÔNG TIN CÁ NHÂN</p>

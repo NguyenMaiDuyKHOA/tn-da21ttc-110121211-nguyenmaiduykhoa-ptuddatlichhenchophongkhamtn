@@ -128,7 +128,7 @@ const Calendar = () => {
                         <div style={{ top, left }} className="absolute z-50 min-w-[180px] max-w-[600px] bg-white border border-gray-300 rounded shadow-lg p-3">
                             <div className="font-bold mb-1">Bs. {popupDoctor.doctor.name}</div>
                             <div className='flex gap-3 items-start'>
-                                <img src={popupDoctor.doctor.image} alt="" className='w-44 h-48 object-cover' />
+                                <img src={popupDoctor.doctor.image} alt="" className='w-44 h-48 object-cover object-top' />
                                 <div>
                                     <p className='text-sm font-bold'>Số điện thoại: <span className='text-base font-normal'>{popupDoctor.doctor.phone}</span></p>
                                     <p className='text-sm font-bold mt-2'>Email: <span className='text-base font-normal'>{popupDoctor.doctor.email}</span></p>
